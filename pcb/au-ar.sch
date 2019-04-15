@@ -12854,46 +12854,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="109.22" y="50.8" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="D01_N" class="1">
-<segment>
-<pinref part="B1" gate="B" pin="17"/>
-<wire x1="83.82" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
-<label x="68.58" y="50.8" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="D01_P" class="1">
-<segment>
-<pinref part="B1" gate="B" pin="18"/>
-<wire x1="83.82" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-<label x="68.58" y="48.26" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="D11_N" class="1">
-<segment>
-<pinref part="B1" gate="B" pin="31"/>
-<wire x1="99.06" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
-<label x="109.22" y="43.18" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="D11_P" class="1">
-<segment>
-<pinref part="B1" gate="B" pin="30"/>
-<wire x1="99.06" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
-<label x="109.22" y="40.64" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="D21_P" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="21"/>
-<wire x1="83.82" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
-<label x="68.58" y="40.64" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="27"/>
+<wire x1="99.06" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+<label x="109.22" y="33.02" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D21_N" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="20"/>
-<wire x1="83.82" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
-<label x="68.58" y="43.18" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="28"/>
+<wire x1="99.06" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<label x="109.22" y="35.56" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CLK2_P" class="1">
@@ -13006,6 +12978,125 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="B1" gate="A" pin="3"/>
 <wire x1="33.02" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="15.24" y="86.36" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="HP2_FPGA" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="48"/>
+<wire x1="48.26" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
+<label x="58.42" y="86.36" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SDA2_FPGA" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="45"/>
+<wire x1="48.26" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
+<label x="58.42" y="78.74" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SCL2_FPGA" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="42"/>
+<wire x1="48.26" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<label x="58.42" y="71.12" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="HP1_FPGA" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="48"/>
+<wire x1="149.86" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<label x="160.02" y="86.36" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SDA1_FPGA" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="42"/>
+<wire x1="149.86" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
+<label x="160.02" y="71.12" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SPI_CLK" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="36"/>
+<wire x1="149.86" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<label x="160.02" y="55.88" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SPI_DI" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="33"/>
+<wire x1="149.86" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
+<label x="160.02" y="48.26" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SPI_DO" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="30"/>
+<wire x1="149.86" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
+<label x="160.02" y="40.64" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SPI_CS" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="27"/>
+<wire x1="149.86" y1="33.02" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="160.02" y="33.02" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SCL1_FPGA" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="39"/>
+<wire x1="149.86" y1="63.5" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
+<label x="160.02" y="63.5" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="EXT_CLK" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="45"/>
+<wire x1="149.86" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
+<label x="160.02" y="78.74" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SCL3" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="9"/>
+<wire x1="134.62" y1="71.12" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
+<label x="121.92" y="71.12" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="SDA3" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="12"/>
+<wire x1="134.62" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
+<label x="121.92" y="63.5" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="D01_N" class="1">
+<segment>
+<pinref part="B1" gate="B" pin="31"/>
+<wire x1="99.06" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
+<label x="109.22" y="43.18" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="D01_P" class="1">
+<segment>
+<pinref part="B1" gate="B" pin="30"/>
+<wire x1="99.06" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
+<label x="109.22" y="40.64" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="D11_N" class="1">
+<segment>
+<pinref part="B1" gate="B" pin="20"/>
+<wire x1="83.82" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<label x="68.58" y="43.18" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="D11_P" class="1">
+<segment>
+<pinref part="B1" gate="B" pin="21"/>
+<wire x1="83.82" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<label x="68.58" y="40.64" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -14188,9 +14279,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="25.4" y="40.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="R5" gate="G$1" x="7.62" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.1214" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="10.922" y="36.83" size="1.778" layer="96" rot="R90"/>
+<instance part="R5" gate="G$1" x="10.16" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.6614" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="13.462" y="36.83" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14213,10 +14304,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="38.1" y1="48.26" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
 <junction x="38.1" y="48.26"/>
 <label x="38.1" y="53.34" size="1.27" layer="95"/>
-<wire x1="15.24" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
 <junction x="15.24" y="48.26"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="45.72" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="45.72" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14227,12 +14318,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="15.24" y="5.08" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="SPI_CS" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CS"/>
-<wire x1="20.32" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="33.02" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
+<junction x="10.16" y="33.02"/>
+<label x="0" y="33.02" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="SPI_DO" class="0">
