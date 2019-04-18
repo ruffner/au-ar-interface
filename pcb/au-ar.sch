@@ -12377,65 +12377,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="lupa300-components">
-<packages>
-<package name="XTAL-6PIN">
-<smd name="P$1" x="-2.1" y="2.54" dx="1.95" dy="1.55" layer="1"/>
-<smd name="P$2" x="-2.1" y="0" dx="1.95" dy="1.55" layer="1"/>
-<smd name="P$3" x="-2.1" y="-2.54" dx="1.95" dy="1.55" layer="1"/>
-<smd name="P$4" x="2.1" y="-2.54" dx="1.95" dy="1.55" layer="1"/>
-<smd name="P$5" x="2.1" y="0" dx="1.95" dy="1.55" layer="1"/>
-<smd name="P$6" x="2.1" y="2.54" dx="1.95" dy="1.55" layer="1"/>
-<text x="-3.1" y="4.8" size="1.778" layer="25">&gt;NAME</text>
-<wire x1="-2.54" y1="-3.81" x2="2.54" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="3.81" x2="-2.54" y2="3.81" width="0.1524" layer="21"/>
-<circle x="-3.81" y="4.572" radius="0.359209375" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="3.81" x2="-2.54" y2="3.556" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="3.81" x2="2.54" y2="3.556" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-3.81" x2="2.54" y2="-3.556" width="0.1524" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="XTAL">
-<description>XO (Standard) CMOS 100kHz ~ 170MHz Programmable Oscillator 3.3V Enable/Disable 6-SMD, No Lead</description>
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.1524" layer="94"/>
-<pin name="VDD" x="-12.7" y="7.62" length="middle"/>
-<pin name="GND" x="-12.7" y="-7.62" length="middle"/>
-<pin name="SDA" x="-12.7" y="2.54" length="middle"/>
-<pin name="SCL" x="-12.7" y="-2.54" length="middle"/>
-<pin name="!CLK" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="CLK" x="12.7" y="5.08" length="middle" rot="R180"/>
-<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SI514">
-<gates>
-<gate name="G$1" symbol="XTAL" x="-5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="XTAL-6PIN">
-<connects>
-<connect gate="G$1" pin="!CLK" pad="P$5"/>
-<connect gate="G$1" pin="CLK" pad="P$4"/>
-<connect gate="G$1" pin="GND" pad="P$3"/>
-<connect gate="G$1" pin="SCL" pad="P$2"/>
-<connect gate="G$1" pin="SDA" pad="P$1"/>
-<connect gate="G$1" pin="VDD" pad="P$6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12506,11 +12447,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="TDP12S521" deviceset="W25Q80DVSNIG" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
-<part name="U$2" library="lupa300-components" deviceset="SI514" device=""/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3k"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3k"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -12976,44 +12912,44 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="D02_N" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="11"/>
-<wire x1="83.82" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
-<label x="68.58" y="66.04" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="49"/>
+<wire x1="99.06" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
+<label x="109.22" y="88.9" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D02_P" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="12"/>
-<wire x1="83.82" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
-<label x="68.58" y="63.5" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="48"/>
+<wire x1="99.06" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
+<label x="109.22" y="86.36" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D22_N" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="14"/>
-<wire x1="83.82" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="68.58" y="58.42" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="5"/>
+<wire x1="83.82" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<label x="68.58" y="81.28" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D22_P" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="15"/>
-<wire x1="83.82" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<label x="68.58" y="55.88" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="6"/>
+<wire x1="83.82" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="68.58" y="78.74" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D12_N" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="37"/>
-<wire x1="99.06" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
-<label x="109.22" y="58.42" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="46"/>
+<wire x1="99.06" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<label x="109.22" y="81.28" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D12_P" class="1">
 <segment>
-<pinref part="B1" gate="B" pin="36"/>
-<wire x1="99.06" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
-<label x="109.22" y="55.88" size="1.27" layer="95"/>
+<pinref part="B1" gate="B" pin="45"/>
+<wire x1="99.06" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
+<label x="109.22" y="78.74" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="LINE_1_1" class="0">
@@ -13142,20 +13078,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="160.02" y="63.5" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="EXT_CLK" class="0">
-<segment>
-<pinref part="B1" gate="C" pin="45"/>
-<wire x1="149.86" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
-<label x="160.02" y="78.74" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="SCL3" class="0">
-<segment>
-<pinref part="B1" gate="C" pin="9"/>
-<wire x1="134.62" y1="71.12" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<label x="121.92" y="71.12" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="D01_N" class="1">
 <segment>
 <pinref part="B1" gate="B" pin="31"/>
@@ -13182,13 +13104,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="B1" gate="B" pin="21"/>
 <wire x1="83.82" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
 <label x="68.58" y="40.64" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="SDA3" class="0">
-<segment>
-<pinref part="B1" gate="C" pin="6"/>
-<wire x1="134.62" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
-<label x="121.92" y="78.74" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CEC1_FPGA" class="0">
@@ -14809,112 +14724,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="DI"/>
 <wire x1="50.8" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <label x="58.42" y="17.78" size="1.27" layer="95"/>
-</segment>
-</net>
-</nets>
-</sheet>
-<sheet>
-<description>Programmable Oscillator</description>
-<plain>
-</plain>
-<instances>
-<instance part="U$2" gate="G$1" x="33.02" y="30.48" smashed="yes">
-<attribute name="NAME" x="22.86" y="43.18" size="1.778" layer="95"/>
-<attribute name="VALUE" x="35.56" y="43.18" size="1.778" layer="96"/>
-</instance>
-<instance part="R6" gate="G$1" x="2.54" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.0414" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="5.842" y="36.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R27" gate="G$1" x="7.62" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.1214" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="10.922" y="36.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C1" gate="G$1" x="33.02" y="58.42" smashed="yes">
-<attribute name="NAME" x="34.036" y="59.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.036" y="54.229" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="G$1" x="43.18" y="58.42" smashed="yes">
-<attribute name="NAME" x="44.196" y="59.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="44.196" y="54.229" size="1.778" layer="96"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="EXT_CLK" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="CLK"/>
-<wire x1="45.72" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
-<label x="53.34" y="35.56" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="22.86" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
-<label x="15.24" y="10.16" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="53.34" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="50.8" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="50.8" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="50.8" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<junction x="38.1" y="50.8"/>
-<label x="38.1" y="48.26" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="3V3" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="VDD"/>
-<wire x1="20.32" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="38.1" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="45.72" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="45.72" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<junction x="7.62" y="48.26"/>
-<wire x1="7.62" y1="48.26" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
-<label x="7.62" y="50.8" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="60.96" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="63.5" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="63.5" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
-<junction x="38.1" y="63.5"/>
-<label x="38.1" y="66.04" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="SDA3" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="SDA"/>
-<wire x1="20.32" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="33.02" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="35.56" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
-<junction x="2.54" y="33.02"/>
-<label x="-10.16" y="33.02" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="SCL3" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="SCL"/>
-<wire x1="20.32" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="27.94" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="35.56" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
-<junction x="7.62" y="27.94"/>
-<label x="-10.16" y="27.94" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
