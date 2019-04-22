@@ -13173,7 +13173,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </instance>
 <instance part="R33" gate="G$1" x="5.08" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.5786" y="69.85" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="1.778" y="69.85" size="1.778" layer="96" rot="R270"/>
+<attribute name="VALUE" x="6.858" y="64.77" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R34" gate="G$1" x="0" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.4986" y="69.85" size="1.778" layer="95" rot="R270"/>
