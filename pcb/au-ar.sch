@@ -12377,6 +12377,121 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="volks73-Molex">
+<description>&lt;h1&gt;Volks73's Library for Molex Parts&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/volks73/eagle-libraries/"&gt;Repository&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3&gt;Licensing:&lt;/h3&gt; 
+&lt;p&gt;
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0), &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/"&gt;http://creativecommons.org/licenses/by-sa/3.0/&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+For attribution, please provide a link in any documentation or design files to the repository on Github. 
+&lt;/p&gt;</description>
+<packages>
+<package name="PICOBLADE53261-0571">
+<description>&lt;h1&gt;5-Pin Surface Mount, Right Angle, Male Header&lt;/h1&gt;
+&lt;h2&gt;PicoBlade&amp;trade; 53261 Series, Single Row, 0.049" (1.25mm) Pitch&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Maximum Current Rating: 1.0A (per channel)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<smd name="GND@1" x="-4.95" y="-0.5" dx="2.1" dy="3" layer="1"/>
+<smd name="GND@2" x="5.15" y="-0.5" dx="2.1" dy="3" layer="1"/>
+<smd name="1" x="-2.4" y="2.4" dx="0.8" dy="1.6" layer="1"/>
+<smd name="2" x="-1.15" y="2.4" dx="0.8" dy="1.6" layer="1"/>
+<smd name="3" x="0.1" y="2.4" dx="0.8" dy="1.6" layer="1"/>
+<smd name="4" x="1.35" y="2.4" dx="0.8" dy="1.6" layer="1"/>
+<smd name="5" x="2.6" y="2.4" dx="0.8" dy="1.6" layer="1"/>
+<wire x1="-3.5" y1="-2.6635" x2="-3.5" y2="1.5365" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1.5365" x2="3.7" y2="1.5365" width="0.127" layer="21"/>
+<wire x1="3.7" y1="1.5365" x2="3.7" y2="-2.6635" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-2.6635" x2="-3.5" y2="-2.6635" width="0.127" layer="21"/>
+<text x="-6.5" y="-2" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="8" y="-2" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-5.2" y1="-2.2635" x2="-3.6" y2="0.536" layer="51"/>
+<rectangle x1="3.8" y1="-2.2635" x2="5.4" y2="0.536" layer="51"/>
+<rectangle x1="-2.56" y1="1.6" x2="-2.24" y2="2.4" layer="51"/>
+<rectangle x1="-1.31" y1="1.6" x2="-0.99" y2="2.4" layer="51"/>
+<rectangle x1="-0.06" y1="1.6" x2="0.26" y2="2.4" layer="51"/>
+<rectangle x1="1.19" y1="1.6" x2="1.51" y2="2.4" layer="51"/>
+<rectangle x1="2.39" y1="1.6" x2="2.71" y2="2.4" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MALE_CONNECTOR">
+<pin name="P$1" x="-5.08" y="0" visible="pad" length="middle"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0532610571" prefix="J">
+<description>&lt;h1&gt;1.25mm Pitch PicoBlade™ Header, Surface Mount, Right Angle, 5 Circuits&lt;/h1&gt;
+&lt;h2&gt;PicoBlade™ Connector System&lt;/h2&gt;
+&lt;h3&gt;Documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.molex.com/pdm_docs/sd/532610571_sd.pdf"&gt;Drawing&lt;/a&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="-1" symbol="MALE_CONNECTOR" x="0" y="20.32"/>
+<gate name="-2" symbol="MALE_CONNECTOR" x="0" y="10.16"/>
+<gate name="-3" symbol="MALE_CONNECTOR" x="0" y="0"/>
+<gate name="-4" symbol="MALE_CONNECTOR" x="0" y="-10.16"/>
+<gate name="-5" symbol="MALE_CONNECTOR" x="0" y="-20.32"/>
+</gates>
+<devices>
+<device name="" package="PICOBLADE53261-0571">
+<connects>
+<connect gate="-1" pin="P$1" pad="1"/>
+<connect gate="-2" pin="P$1" pad="2"/>
+<connect gate="-3" pin="P$1" pad="3"/>
+<connect gate="-4" pin="P$1" pad="4"/>
+<connect gate="-5" pin="P$1" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="Connectors, Interconnects"/>
+<attribute name="COLOR" value="Natural"/>
+<attribute name="CONNECTOR_TYPE" value="Header, Shrouded"/>
+<attribute name="CONTACT_FINISH" value="Tin"/>
+<attribute name="CONTACT_FINISH_THICKNESS" value="39µin (1.00µm)"/>
+<attribute name="CONTACT_MATING_LENGTH" value="-"/>
+<attribute name="CONTACT_TYPE" value="Blade Pin"/>
+<attribute name="DESCRIPTION" value="CONN HEADER 5POS 1.25MM R/A SMD"/>
+<attribute name="DOCUMENTATION_LINK" value="&lt;a href=&quot;http://www.molex.com/pdm_docs/sd/532610571_sd.pdf&quot;&gt;Datasheet&lt;/a&gt;"/>
+<attribute name="DOCUMENTATION_URL" value="http://www.molex.com/pdm_docs/sd/532610571_sd.pdf"/>
+<attribute name="FAMILY" value="Rectangular Connectors - Headers, Male Pins"/>
+<attribute name="FASTENING_TYPE" value="-"/>
+<attribute name="FEATURES" value="Solder Retention"/>
+<attribute name="MANUFACTURER" value="Molex Inc"/>
+<attribute name="MOUNTING_TYPE" value="Surface Mount, Right Angle"/>
+<attribute name="NUMBER_OF_POSITIONS" value="5"/>
+<attribute name="NUMBER_OF_POSITIONS_LOADED" value="All"/>
+<attribute name="NUMBER_OF_ROWS" value="1"/>
+<attribute name="PART_NUMBER" value="0532610571"/>
+<attribute name="PITCH" value="0.049&quot; (1.25mm)"/>
+<attribute name="ROW_SPACING" value="-"/>
+<attribute name="SERIES" value="PicoBlade™ 53261"/>
+<attribute name="SUPPLIER_ITEM_LINK" value="&lt;a href=&quot;http://www.digikey.com/product-detail/en/0532610571/WM7623CT-ND/699110&quot;&gt;Details&lt;/a&gt;"/>
+<attribute name="SUPPLIER_ITEM_NUMBER" value="WM7623CT-ND"/>
+<attribute name="SUPPLIER_ITEM_URL" value="http://www.digikey.com/product-detail/en/0532610571/WM7623CT-ND/699110"/>
+<attribute name="SUPPLIER_LINK" value="&lt;a href=&quot;http://www.digikey.com&quot;&gt;Home Page&lt;/a&gt;"/>
+<attribute name="SUPPLIER_NAME" value="Digi-Key"/>
+<attribute name="SUPPLIER_URL" value="http://www.digikey.com"/>
+<attribute name="TERMINATION" value="Solder"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12431,10 +12546,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LINE_1_2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1"/>
 <part name="LINE_1_3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1"/>
 <part name="LINE_1_4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1"/>
-<part name="LINE_2_4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_1"/>
-<part name="LINE_2_3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_3"/>
-<part name="LINE_2_2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_2"/>
-<part name="LINE_2_1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_1"/>
+<part name="4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_1"/>
+<part name="3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_3"/>
+<part name="2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_2"/>
+<part name="1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="LINE_1"/>
 <part name="CAMERA1" library="S6B-PH-K-S_LF__SN_" deviceset="S6B-PH-K-S(LF)(SN)" device=""/>
 <part name="CAMERA2" library="S6B-PH-K-S_LF__SN_" deviceset="S6B-PH-K-S(LF)(SN)" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12475,6 +12590,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
 <part name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
 <part name="R49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
+<part name="FLASH" library="volks73-Molex" deviceset="0532610571" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12540,18 +12656,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="60.96" y="99.06" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="B1" gate="B" pin="1"/>
-<wire x1="83.82" y1="91.44" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="91.44" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
-<label x="68.58" y="99.06" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="B1" gate="B" pin="50"/>
-<wire x1="99.06" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="91.44" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
-<label x="111.76" y="99.06" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="B1" gate="C" pin="1"/>
 <wire x1="134.62" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="91.44" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
@@ -12562,18 +12666,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="149.86" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="91.44" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
 <label x="162.56" y="99.06" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="B1" gate="D" pin="1"/>
-<wire x1="187.96" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="91.44" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
-<label x="172.72" y="99.06" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="B1" gate="D" pin="50"/>
-<wire x1="203.2" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="91.44" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
-<label x="215.9" y="99.06" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14346,16 +14438,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="74.93" y="44.45" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="72.39" y="46.99" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="LINE_2_4" gate="G$1" x="170.18" y="45.72" smashed="yes" rot="R180">
+<instance part="4" gate="G$1" x="170.18" y="45.72" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" x="168.91" y="46.99" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="LINE_2_3" gate="G$1" x="167.64" y="43.18" smashed="yes" rot="R180">
+<instance part="3" gate="G$1" x="167.64" y="43.18" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" x="166.37" y="44.45" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="LINE_2_2" gate="G$1" x="170.18" y="40.64" smashed="yes" rot="R180">
+<instance part="2" gate="G$1" x="170.18" y="40.64" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" x="168.91" y="41.91" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="LINE_2_1" gate="G$1" x="167.64" y="38.1" smashed="yes" rot="R180">
+<instance part="1" gate="G$1" x="167.64" y="38.1" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" x="166.37" y="39.37" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="CAMERA1" gate="G$1" x="86.36" y="43.18" smashed="yes">
@@ -14567,7 +14659,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$3" class="0">
 <segment>
 <pinref part="CAMERA2" gate="G$1" pin="1"/>
-<pinref part="LINE_2_4" gate="G$1" pin="TP"/>
+<pinref part="4" gate="G$1" pin="TP"/>
 <wire x1="172.72" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
@@ -14577,7 +14669,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$4" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="LINE_2_3" gate="G$1" pin="TP"/>
+<pinref part="3" gate="G$1" pin="TP"/>
 <wire x1="152.4" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="CAMERA2" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="45.72" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
@@ -14587,7 +14679,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$5" class="0">
 <segment>
 <pinref part="CAMERA2" gate="G$1" pin="3"/>
-<pinref part="LINE_2_2" gate="G$1" pin="TP"/>
+<pinref part="2" gate="G$1" pin="TP"/>
 <wire x1="172.72" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
@@ -14597,7 +14689,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$6" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="LINE_2_1" gate="G$1" pin="TP"/>
+<pinref part="1" gate="G$1" pin="TP"/>
 <wire x1="162.56" y1="40.64" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="CAMERA2" gate="G$1" pin="4"/>
 <wire x1="167.64" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
@@ -14659,6 +14751,26 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="8.6614" y="36.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="13.462" y="36.83" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="FLASH" gate="-1" x="104.14" y="50.8" smashed="yes">
+<attribute name="NAME" x="104.14" y="53.34" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="45.72" size="1.778" layer="96"/>
+</instance>
+<instance part="FLASH" gate="-2" x="104.14" y="45.72" smashed="yes">
+<attribute name="NAME" x="104.14" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="FLASH" gate="-3" x="104.14" y="40.64" smashed="yes">
+<attribute name="NAME" x="104.14" y="43.18" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="35.56" size="1.778" layer="96"/>
+</instance>
+<instance part="FLASH" gate="-4" x="104.14" y="35.56" smashed="yes">
+<attribute name="NAME" x="104.14" y="38.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="FLASH" gate="-5" x="104.14" y="30.48" smashed="yes">
+<attribute name="NAME" x="104.14" y="33.02" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="25.4" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14693,6 +14805,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="15.24" y1="17.78" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
 <label x="15.24" y="5.08" size="1.27" layer="95"/>
 </segment>
+<segment>
+<wire x1="91.44" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<label x="68.58" y="45.72" size="1.778" layer="95"/>
+<pinref part="FLASH" gate="-1" pin="P$1"/>
+<wire x1="91.44" y1="45.72" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SPI_CS" class="0">
 <segment>
@@ -14704,12 +14823,26 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="10.16" y="33.02"/>
 <label x="0" y="33.02" size="1.27" layer="95"/>
 </segment>
+<segment>
+<wire x1="91.44" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+<label x="68.58" y="35.56" size="1.778" layer="95"/>
+<pinref part="FLASH" gate="-5" pin="P$1"/>
+<wire x1="91.44" y1="35.56" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SPI_DO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DO"/>
 <wire x1="20.32" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
 <label x="0" y="27.94" size="1.27" layer="95"/>
+</segment>
+<segment>
+<wire x1="96.52" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
+<label x="68.58" y="38.1" size="1.778" layer="95"/>
+<wire x1="96.52" y1="38.1" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="FLASH" gate="-4" pin="P$1"/>
+<wire x1="96.52" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_CLK" class="0">
@@ -14718,12 +14851,24 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="50.8" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 <label x="58.42" y="22.86" size="1.27" layer="95"/>
 </segment>
+<segment>
+<wire x1="96.52" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
+<label x="68.58" y="43.18" size="1.778" layer="95"/>
+<wire x1="96.52" y1="43.18" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="FLASH" gate="-2" pin="P$1"/>
+<wire x1="96.52" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SPI_DI" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DI"/>
 <wire x1="50.8" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <label x="58.42" y="17.78" size="1.27" layer="95"/>
+</segment>
+<segment>
+<wire x1="99.06" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<label x="68.58" y="40.64" size="1.778" layer="95"/>
+<pinref part="FLASH" gate="-3" pin="P$1"/>
 </segment>
 </net>
 </nets>
