@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12492,6 +12492,63 @@ For attribution, please provide a link in any documentation or design files to t
 </deviceset>
 </devicesets>
 </library>
+<library name="lupa300-components">
+<packages>
+<package name="XTAL-6PIN">
+<smd name="P$1" x="-2.1" y="2.54" dx="1.95" dy="1.55" layer="1"/>
+<smd name="P$2" x="-2.1" y="0" dx="1.95" dy="1.55" layer="1"/>
+<smd name="P$3" x="-2.1" y="-2.54" dx="1.95" dy="1.55" layer="1"/>
+<smd name="P$4" x="2.1" y="-2.54" dx="1.95" dy="1.55" layer="1"/>
+<smd name="P$5" x="2.1" y="0" dx="1.95" dy="1.55" layer="1"/>
+<smd name="P$6" x="2.1" y="2.54" dx="1.95" dy="1.55" layer="1"/>
+<text x="-3.1" y="4.8" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-2.54" y1="-3.81" x2="2.54" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="3.81" x2="-1.27" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="3.81" x2="-2.54" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-3.81" width="0.1524" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="XTAL">
+<description>XO (Standard) CMOS 100kHz ~ 170MHz Programmable Oscillator 3.3V Enable/Disable 6-SMD, No Lead</description>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.1524" layer="94"/>
+<pin name="VDD" x="-12.7" y="7.62" length="middle"/>
+<pin name="GND" x="-12.7" y="-7.62" length="middle"/>
+<pin name="SDA" x="-12.7" y="2.54" length="middle"/>
+<pin name="SCL" x="-12.7" y="-2.54" length="middle"/>
+<pin name="!CLK" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="CLK" x="12.7" y="5.08" length="middle" rot="R180"/>
+<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SI514">
+<gates>
+<gate name="G$1" symbol="XTAL" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="XTAL-6PIN">
+<connects>
+<connect gate="G$1" pin="!CLK" pad="P$5"/>
+<connect gate="G$1" pin="CLK" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="SCL" pad="P$2"/>
+<connect gate="G$1" pin="SDA" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12591,6 +12648,10 @@ For attribution, please provide a link in any documentation or design files to t
 <part name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
 <part name="R49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
 <part name="FLASH" library="volks73-Molex" deviceset="0532610571" device=""/>
+<part name="SI514" library="lupa300-components" deviceset="SI514" device=""/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3k"/>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3k"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -13200,9 +13261,9 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="CEC1_FPGA" class="0">
 <segment>
-<pinref part="B1" gate="C" pin="3"/>
-<wire x1="134.62" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
-<label x="116.84" y="86.36" size="1.27" layer="95"/>
+<pinref part="B1" gate="C" pin="37"/>
+<wire x1="149.86" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
+<label x="160.02" y="58.42" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CEC2_FPGA" class="0">
@@ -13210,6 +13271,27 @@ For attribution, please provide a link in any documentation or design files to t
 <pinref part="B1" gate="A" pin="39"/>
 <wire x1="48.26" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <label x="55.88" y="63.5" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="OSC_CLK" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="45"/>
+<wire x1="149.86" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
+<label x="160.02" y="78.74" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="OSC_SDA" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="28"/>
+<wire x1="48.26" y1="35.56" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
+<label x="58.42" y="35.56" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="OSC_SCL" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="31"/>
+<wire x1="48.26" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<label x="58.42" y="43.18" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -14869,6 +14951,84 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="99.06" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
 <label x="68.58" y="40.64" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="-3" pin="P$1"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>Programmable Oscillator</description>
+<plain>
+</plain>
+<instances>
+<instance part="SI514" gate="G$1" x="22.86" y="20.32" smashed="yes">
+<attribute name="NAME" x="12.7" y="33.02" size="1.778" layer="95"/>
+<attribute name="VALUE" x="25.4" y="33.02" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="-10.16" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-11.6586" y="26.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-6.858" y="26.67" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R27" gate="G$1" x="-17.78" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-19.2786" y="26.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-14.478" y="26.67" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C1" gate="G$1" x="-27.94" y="30.48" smashed="yes">
+<attribute name="NAME" x="-26.924" y="31.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-26.924" y="26.289" size="1.778" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="3V3" class="0">
+<segment>
+<pinref part="SI514" gate="G$1" pin="VDD"/>
+<wire x1="10.16" y1="27.94" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
+<label x="-5.08" y="27.94" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="27.94" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="-10.16" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-10.16" y="35.56"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="33.02" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-17.78" y="35.56"/>
+</segment>
+</net>
+<net name="OSC_SDA" class="0">
+<segment>
+<pinref part="SI514" gate="G$1" pin="SDA"/>
+<label x="-5.08" y="22.86" size="1.778" layer="95"/>
+<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OSC_SCL" class="0">
+<segment>
+<pinref part="SI514" gate="G$1" pin="SCL"/>
+<label x="-5.08" y="17.78" size="1.778" layer="95"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="17.78" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="17.78" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="SI514" gate="G$1" pin="GND"/>
+<label x="-5.08" y="12.7" size="1.778" layer="95"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="25.4" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OSC_CLK" class="0">
+<segment>
+<pinref part="SI514" gate="G$1" pin="CLK"/>
+<wire x1="35.56" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<label x="40.64" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
