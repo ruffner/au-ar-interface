@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11389,6 +11389,8 @@ For attribution, please provide a link in any documentation or design files to t
 <part name="U2" library="lupa300-components" deviceset="TPD12S016PWR" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12391,6 +12393,14 @@ For attribution, please provide a link in any documentation or design files to t
 <attribute name="NAME" x="-1.524" y="51.435" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.524" y="46.609" size="1.778" layer="96"/>
 </instance>
+<instance part="C4" gate="G$1" x="99.06" y="76.2" smashed="yes">
+<attribute name="NAME" x="100.076" y="76.835" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.076" y="72.009" size="1.778" layer="96"/>
+</instance>
+<instance part="C5" gate="G$1" x="210.82" y="78.74" smashed="yes">
+<attribute name="NAME" x="211.836" y="79.375" size="1.778" layer="95"/>
+<attribute name="VALUE" x="211.836" y="74.549" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12472,8 +12482,12 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="-10.16" y1="43.18" x2="-10.16" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="48.26" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-2.54" y="43.18"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
+<junction x="99.06" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="GND_2"/>
@@ -12487,8 +12501,10 @@ For attribution, please provide a link in any documentation or design files to t
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="GND_3"/>
-<wire x1="190.5" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
 <label x="200.66" y="58.42" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="73.66" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5VHDMI1" class="0">
@@ -12504,12 +12520,20 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="81.28" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="81.28" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <label x="91.44" y="88.9" size="1.778" layer="95"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="81.28" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<junction x="91.44" y="81.28"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VCCA"/>
 <wire x1="190.5" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="83.82" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
 <label x="203.2" y="93.98" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="83.82" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="83.82" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<junction x="203.2" y="83.82"/>
 </segment>
 </net>
 <net name="CTHPD1" class="0">
