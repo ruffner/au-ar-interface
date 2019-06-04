@@ -11444,12 +11444,6 @@ For attribution, please provide a link in any documentation or design files to t
 <nets>
 <net name="5V" class="0">
 <segment>
-<pinref part="B1" gate="A" pin="1"/>
-<wire x1="33.02" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="91.44" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
-<label x="20.32" y="99.06" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="B1" gate="A" pin="50"/>
 <wire x1="48.26" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="91.44" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
@@ -12031,6 +12025,20 @@ For attribution, please provide a link in any documentation or design files to t
 <pinref part="B1" gate="C" pin="37"/>
 <wire x1="149.86" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
 <label x="160.02" y="58.42" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="CTHPD1" class="0">
+<segment>
+<pinref part="B1" gate="C" pin="43"/>
+<wire x1="149.86" y1="73.66" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<label x="160.02" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTHPD2" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="36"/>
+<wire x1="48.26" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<label x="58.42" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
