@@ -92,6 +92,8 @@
 <layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -11310,6 +11312,96 @@ For attribution, please provide a link in any documentation or design files to t
 </deviceset>
 </devicesets>
 </library>
+<library name="gsynth" urn="urn:adsk.eagle:library:7741914">
+<packages>
+<package name="SOT23" urn="urn:adsk.eagle:footprint:7741928/1" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOT23" urn="urn:adsk.eagle:package:7741968/1" type="box" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SOT23"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="LABELED-PMOS" urn="urn:adsk.eagle:symbol:7741940/1" library_version="2" library_locally_modified="yes">
+<description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
+Switches electrical signals</description>
+<text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0.6858" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0" x2="-1.9812" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.2954" x2="-1.9812" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="-1.9812" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="2.54" x2="-1.9812" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="-1.9812" y2="1.0922" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="1.6002" y2="-0.9398" width="0.1524" layer="94"/>
+<wire x1="3.4798" y1="-0.5842" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-0.7874" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.8034" x2="2.54" y2="0.5842" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.302" y="0.508"/>
+<vertex x="2.54" y="-0.762"/>
+<vertex x="1.778" y="0.508"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.1778" y="0"/>
+<vertex x="-0.9398" y="-0.254"/>
+<vertex x="-0.9398" y="0.254"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DMP3099L" urn="urn:adsk.eagle:component:7741981/1" library_version="2" library_locally_modified="yes">
+<description>P-Channel 30V 3.8A (Ta) 1.08W (Ta) Surface Mount SOT-23</description>
+<gates>
+<gate name="G$1" symbol="LABELED-PMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7741968/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11376,7 +11468,7 @@ For attribution, please provide a link in any documentation or design files to t
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$1" library="TDP12S521" deviceset="W25Q80DVSNIG" device=""/>
+<part name="U4" library="TDP12S521" deviceset="W25Q80DVSNIG" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47k"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -11391,6 +11483,7 @@ For attribution, please provide a link in any documentation or design files to t
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="U3" library="gsynth" library_urn="urn:adsk.eagle:library:7741914" deviceset="DMP3099L" device="" package3d_urn="urn:adsk.eagle:package:7741968/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -12041,6 +12134,13 @@ For attribution, please provide a link in any documentation or design files to t
 <label x="58.42" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="HP2_EN" class="0">
+<segment>
+<pinref part="B1" gate="A" pin="40"/>
+<wire x1="48.26" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
+<label x="58.42" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -12085,6 +12185,10 @@ For attribution, please provide a link in any documentation or design files to t
 <instance part="C12" gate="G$1" x="78.74" y="35.56" smashed="yes">
 <attribute name="NAME" x="79.756" y="36.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="79.756" y="31.369" size="1.778" layer="96"/>
+</instance>
+<instance part="U3" gate="G$1" x="68.58" y="101.6" smashed="yes">
+<attribute name="NAME" x="73.66" y="101.6" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="73.66" y="99.06" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -12167,13 +12271,6 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="25.4" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="40.64" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="HP1" class="0">
-<segment>
-<pinref part="HDMI_1" gate="G$1" pin="19"/>
-<label x="12.7" y="45.72" size="1.778" layer="95"/>
-<wire x1="25.4" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D22_P" class="1">
@@ -12259,7 +12356,9 @@ For attribution, please provide a link in any documentation or design files to t
 <segment>
 <pinref part="HDMI_2" gate="G$1" pin="19"/>
 <label x="81.28" y="43.18" size="1.778" layer="95"/>
-<wire x1="91.44" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="S"/>
+<wire x1="71.12" y1="96.52" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -12376,6 +12475,27 @@ For attribution, please provide a link in any documentation or design files to t
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="40.64" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="D"/>
+<wire x1="71.12" y1="106.68" x2="71.12" y2="111.76" width="0.1524" layer="91"/>
+<label x="71.12" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HP2_EN" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="G"/>
+<wire x1="63.5" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<label x="55.88" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HP1" class="0">
+<segment>
+<pinref part="HDMI_1" gate="G$1" pin="19"/>
+<wire x1="25.4" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<label x="12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -13161,7 +13281,7 @@ For attribution, please provide a link in any documentation or design files to t
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="25.4" y="15.24" smashed="yes">
+<instance part="U4" gate="G$1" x="25.4" y="15.24" smashed="yes">
 <attribute name="NAME" x="25.4" y="40.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="40.64" size="1.778" layer="96"/>
 </instance>
@@ -13195,14 +13315,14 @@ For attribution, please provide a link in any documentation or design files to t
 <nets>
 <net name="3V3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="U4" gate="G$1" pin="VCC"/>
 <wire x1="50.8" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="33.02" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="HOLD"/>
+<pinref part="U4" gate="G$1" pin="HOLD"/>
 <wire x1="50.8" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="27.94" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <junction x="58.42" y="33.02"/>
-<pinref part="U$1" gate="G$1" pin="WP"/>
+<pinref part="U4" gate="G$1" pin="WP"/>
 <wire x1="20.32" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="22.86" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
@@ -13218,7 +13338,7 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="20.32" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="17.78" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
 <label x="15.24" y="5.08" size="1.27" layer="95"/>
@@ -13233,7 +13353,7 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="SPI_CS" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CS"/>
+<pinref part="U4" gate="G$1" pin="CS"/>
 <wire x1="20.32" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="33.02" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
@@ -13251,7 +13371,7 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="SPI_DO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DO"/>
+<pinref part="U4" gate="G$1" pin="DO"/>
 <wire x1="20.32" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
 <label x="0" y="27.94" size="1.27" layer="95"/>
 </segment>
@@ -13265,7 +13385,7 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="SPI_CLK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CLK"/>
+<pinref part="U4" gate="G$1" pin="CLK"/>
 <wire x1="50.8" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 <label x="58.42" y="22.86" size="1.27" layer="95"/>
 </segment>
@@ -13279,7 +13399,7 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="SPI_DI" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DI"/>
+<pinref part="U4" gate="G$1" pin="DI"/>
 <wire x1="50.8" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <label x="58.42" y="17.78" size="1.27" layer="95"/>
 </segment>
