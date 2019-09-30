@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11448,7 +11448,7 @@ For attribution, please provide a link in any documentation or design files to t
 </classes>
 <parts>
 <part name="B1" library="alchitry_elements" deviceset="ALCHITRY_ELEMENT" device="NT"/>
-<part name="HDMI_OUTPUT" library="10029449-001RLF" deviceset="10029449-001RLF" device=""/>
+<part name="HDMI_OUT" library="10029449-001RLF" deviceset="10029449-001RLF" device=""/>
 <part name="HDMI_IN/OUT" library="10029449-001RLF" deviceset="10029449-001RLF" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12173,7 +12173,7 @@ For attribution, please provide a link in any documentation or design files to t
 <plain>
 </plain>
 <instances>
-<instance part="HDMI_OUTPUT" gate="G$1" x="33.02" y="68.58" smashed="yes">
+<instance part="HDMI_OUT" gate="G$1" x="33.02" y="68.58" smashed="yes">
 <attribute name="NAME" x="27.931240625" y="94.0238" size="1.679290625" layer="95"/>
 <attribute name="VALUE" x="27.92996875" y="41.3483" size="1.679709375" layer="96"/>
 </instance>
@@ -12225,77 +12225,77 @@ For attribution, please provide a link in any documentation or design files to t
 <nets>
 <net name="D21_P" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="1"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
 <label x="12.7" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D21_N" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="3"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="3"/>
 <wire x1="25.4" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
 <label x="12.7" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11_P" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="4"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="4"/>
 <wire x1="25.4" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
 <label x="12.7" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11_N" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="6"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="6"/>
 <wire x1="25.4" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
 <label x="12.7" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D01_P" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="7"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="7"/>
 <wire x1="25.4" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <label x="12.7" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D01_N" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="9"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="9"/>
 <wire x1="25.4" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
 <label x="12.7" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK1_P" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="10"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="10"/>
 <wire x1="25.4" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
 <label x="12.7" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK1_N" class="1">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="12"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="12"/>
 <wire x1="25.4" y1="63.5" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
 <label x="12.7" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL1" class="0">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="15"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="15"/>
 <label x="12.7" y="55.88" size="1.778" layer="95"/>
 <wire x1="25.4" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA1" class="0">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="16"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="16"/>
 <label x="12.7" y="53.34" size="1.778" layer="95"/>
 <wire x1="25.4" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5VHDMI1" class="0">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="18"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="18"/>
 <label x="10.16" y="48.26" size="1.778" layer="95"/>
 <wire x1="25.4" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -12304,7 +12304,7 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="HP1" class="0">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="19"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="19"/>
 <label x="12.7" y="45.72" size="1.778" layer="95"/>
 <wire x1="25.4" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
 </segment>
@@ -12389,21 +12389,21 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="2"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="5"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="5"/>
 <wire x1="25.4" y1="81.28" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="88.9" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
 <junction x="22.86" y="81.28"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="8"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="8"/>
 <wire x1="25.4" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="81.28" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
 <junction x="22.86" y="73.66"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="11"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="11"/>
 <wire x1="25.4" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="73.66" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <junction x="22.86" y="66.04"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="17"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="17"/>
 <wire x1="25.4" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <junction x="22.86" y="50.8"/>
@@ -12459,15 +12459,15 @@ For attribution, please provide a link in any documentation or design files to t
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="P$4"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="P$4"/>
 <wire x1="48.26" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="P$3"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="P$3"/>
 <wire x1="50.8" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="P$2"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="P$2"/>
 <wire x1="48.26" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="HDMI_OUTPUT" gate="G$1" pin="P$1"/>
+<pinref part="HDMI_OUT" gate="G$1" pin="P$1"/>
 <wire x1="50.8" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="50.8" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <junction x="50.8" y="50.8"/>
