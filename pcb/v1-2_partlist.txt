@@ -1,0 +1,69 @@
+Partlist
+
+Exported from au-ar.sch at 9/30/2019 1:22 PM
+
+EAGLE Version 9.5.1 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant: 
+
+Part        Value              Device             Package                Library            Sheet
+
+1           LINE_1             TPTP16R            TP16R                  testpad            4
+2           LINE_2             TPTP16R            TP16R                  testpad            4
+3           LINE_3             TPTP16R            TP16R                  testpad            4
+4           LINE_1             TPTP16R            TP16R                  testpad            4
+B1          ALCHITRY_ELEMENTNT ALCHITRY_ELEMENTNT ELEMENT_NO_TOP         alchitry_elements  1
+C1          0.1uF              C-USC0603          C0603                  rcl                6
+C2          0.1uF              C-USC0603          C0603                  rcl                3
+C3          0.1uF              C-USC0603          C0603                  rcl                3
+C4          0.1uF              C-USC0603          C0603                  rcl                3
+C5          0.1uF              C-USC0603          C0603                  rcl                3
+C9          0.1uF              C-USC0603          C0603                  rcl                2
+C10         0.1uF              C-USC0603          C0603                  rcl                2
+C11         0.1uF              C-USC0603          C0603                  rcl                2
+C12         0.1uF              C-USC0603          C0603                  rcl                2
+CAMERA1     S6B-PH-K-S(LF)(SN) S6B-PH-K-S(LF)(SN) JST_S6B-PH-K-S(LF)(SN) S6B-PH-K-S_LF__SN_ 4
+CAMERA2     S6B-PH-K-S(LF)(SN) S6B-PH-K-S(LF)(SN) JST_S6B-PH-K-S(LF)(SN) S6B-PH-K-S_LF__SN_ 4
+FLASH       0532610571         0532610571         PICOBLADE53261-0571    volks73-Molex      5
+HDMI_IN/OUT 10029449-001RLF    10029449-001RLF    FCI_10029449-001RLF    10029449-001RLF    2
+HDMI_OUT    10029449-001RLF    10029449-001RLF    FCI_10029449-001RLF    10029449-001RLF    2
+LINE_1_1    TPTP16R            TPTP16R            TP16R                  testpad            4
+LINE_1_2    TPTP16R            TPTP16R            TP16R                  testpad            4
+LINE_1_3    TPTP16R            TPTP16R            TP16R                  testpad            4
+LINE_1_4    TPTP16R            TPTP16R            TP16R                  testpad            4
+R1          DNP                R-US_R0603         R0603                  rcl                4
+R2          DNP                R-US_R0603         R0603                  rcl                4
+R3          DNP                R-US_R0603         R0603                  rcl                4
+R4          DNP                R-US_R0603         R0603                  rcl                4
+R5          47k                R-US_R0603         R0603                  rcl                5
+R6          3k                 R-US_R0603         R0603                  rcl                6
+R7          DNP                R-US_R0603         R0603                  rcl                4
+R8          DNP                R-US_R0603         R0603                  rcl                4
+R9          DNP                R-US_R0603         R0603                  rcl                4
+R10         DNP                R-US_R0603         R0603                  rcl                4
+R11         DNP                R-US_R0603         R0603                  rcl                4
+R12         DNP                R-US_R0603         R0603                  rcl                4
+R13         DNP                R-US_R0603         R0603                  rcl                4
+R14         DNP                R-US_R0603         R0603                  rcl                4
+R15         DNP                R-US_R0603         R0603                  rcl                4
+R16         DNP                R-US_R0603         R0603                  rcl                4
+R17         DNP                R-US_R0603         R0603                  rcl                4
+R18         DNP                R-US_R0603         R0603                  rcl                4
+R19         DNP                R-US_R0603         R0603                  rcl                4
+R20         DNP                R-US_R0603         R0603                  rcl                4
+R21         DNP                R-US_R0603         R0603                  rcl                4
+R22         DNP                R-US_R0603         R0603                  rcl                4
+R23         DNP                R-US_R0603         R0603                  rcl                4
+R24         DNP                R-US_R0603         R0603                  rcl                4
+R25         DNP                R-US_R0603         R0603                  rcl                4
+R26         DNP                R-US_R0603         R0603                  rcl                4
+R27         3k                 R-US_R0603         R0603                  rcl                6
+R28         2k                 R-US_R0603         R0603                  rcl                2
+R29         10k                R-US_R0603         R0603                  rcl                2
+R30         10k                R-US_R0603         R0603                  rcl                2
+SI514       SI514              SI514              XTAL-6PIN              lupa300-components 6
+SJ1                            SJ                 SJ                     jumper             2
+TP_GND      TPTP16R            TPTP16R            TP16R                  testpad            4
+U$1         W25Q80DVSNIG       W25Q80DVSNIG       SOIC8                  TDP12S521          5
+U1          TPD12S016PWR       TPD12S016PWR       PW24                   lupa300-components 3
+U2          TPD12S016PWR       TPD12S016PWR       PW24                   lupa300-components 3
